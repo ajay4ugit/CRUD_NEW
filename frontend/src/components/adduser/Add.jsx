@@ -19,7 +19,7 @@ const Add = () =>     {
     }
     const submitForm=async(e)=>{
         e.preventDefault();
-        await axios.post("https://crud-app-sb82.onrender.com/api/create",user)
+        await axios.post("https://crud-new-backend.onrender.com/api/create",user)
         .then((response)=>{
             toast.success(response.data.msg,{position:"top-right"})
             navigate("/")
